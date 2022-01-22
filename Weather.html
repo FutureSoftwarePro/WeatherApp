@@ -1,28 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    
-  
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" class="search-bar">
-            <button><img src="images/314807_search_icon.png" alt= "search glass" width="20" height="20" /></button>
-        </div>
-        <div class="weather">
-            <h2 class="city">Weather in Raleigh</h2>
-            <div class='temperature'>31°F</div>
-            <img src="" alt="" class="icon"/>
-            <div class="discription">Cloudy</div>
-            <div class="humidity">Humidity: 65%</div>
-            <div class="wind">Wind speed 15 mi/h</div>
-        </div>
-    </div>
-    
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>weather app</title>
+   </head>
+   <body>
+      <div class="weatherParent">
+         <div class='weatherContainer'>
+            <!--This part contains the input field and magnifiying glass-->
+            <div class='inputField'>
+               <input placeholder='Search' type="text"> 
+               <i class="fas fa-search"></i> 
+            </div>
+            <!--Section Ends here-->
+
+
+            <!--City Name and Current weather in Fahrenheight-->
+            <div>
+               <h2>Weather In Tokyo</h2>
+               <Span class="currentWeatherNumber">9.82C</Span>
+            </div>
+            <!--City Weather ends here-->
+
+
+
+            <!--Current Weather Icon / Humidity/wind-->
+            <div class="iconWind">
+               <div><i class="fas fa-cloud"></i> Broken Clouds</div>
+               <div>
+                  Humidity:66c
+               </div>
+               <div>
+                  Wind:3.6km/h
+               </div>
+            </div>
+            <!--Current Weather Icon / Humidity/wind ends here -->
+
+
+         </div>
+      </div>
+   </body>
 </html>
+
